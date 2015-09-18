@@ -9,5 +9,8 @@
 
 I beg you to read [redis.io/security](http://redis.io/topics/security) if you have any intention to setup *Redis.io* in production mode.
 
+##### *Redis.io* vs *Shodan*
 
-product:"Redis key-value store" port:"6379"
+*Shodan* give them a powerful tools to make stat.
+
+**Keyword** : { product:"Redis key-value store", port:"6379" }
