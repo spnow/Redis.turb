@@ -11,6 +11,6 @@ I beg you to read [url:redis.io/security](http://redis.io/topics/security) if yo
 
 ##### *Redis.io* vs *Shodan*
 
-*Shodan* give us a powerful internet mapping tool.
+*Shodan* give us a powerful webmap to find several misconfigured deamons.
 
 **Keyword** : { product:"Redis key-value store", port:"6379" }
