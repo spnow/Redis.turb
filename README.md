@@ -11,6 +11,6 @@ I beg you to read [redis.io/security](http://redis.io/topics/security) if you ha
 
 ##### *Redis.io* vs *Shodan*
 
-*Shodan* give them a powerful tools to make stat.
+*Shodan* give us a powerful tool for statistics.
 
 **Keyword** : { product:"Redis key-value store", port:"6379" }
