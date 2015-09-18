@@ -11,6 +11,6 @@ I beg you to read [url:redis.io/security](http://redis.io/topics/security) if yo
 
 ##### *Redis.io* vs *Shodan*
 
-*Shodan* give us a powerful tool for mapping internet.
+*Shodan* give us a powerful internet mapping tool.
 
 **Keyword** : { product:"Redis key-value store", port:"6379" }
