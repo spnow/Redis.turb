@@ -42,7 +42,11 @@ Background saving started
 
 ##### Crash
 
-`DEBUG SEGFAULT`
+```
+localhost:6379> debug segfault
+(9.69s)
+not connected> 
+```
 
 #### Security Best Practices
 
