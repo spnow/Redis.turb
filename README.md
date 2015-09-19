@@ -40,6 +40,10 @@ Background saving started
 -rw-r--r-- 1 redis redis 45 Sep 19 17:01 backdoor.php
 ```
 
+##### Crash
+
+`DEBUG SEGFAULT`
+
 #### Security Best Practices
 
 ##### Only bind *Redis.io* to Loopback
