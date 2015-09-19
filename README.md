@@ -1,6 +1,6 @@
 # Redisturb
-## Redis.io Penetration Testing 
-
+## *Redis.io* Penetration Testing 
+![GitHub Logo](/Redis_Logo.png)
 ##### Intro
 
 *Redis.io* is an open source in-memory database developed to store volatile data like messages, cache, cookie, etc.
