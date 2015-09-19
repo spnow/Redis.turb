@@ -40,7 +40,7 @@ Background saving started
 -rw-r--r-- 1 redis redis 45 Sep 19 17:01 backdoor.php
 ```
 
-##### Crash
+##### Denial Of Service
 
 ```
 localhost:6379> debug segfault
