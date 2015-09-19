@@ -12,6 +12,7 @@ I beg you to read [url:redis.io/security](http://redis.io/topics/security) if yo
 ##### discover misconfigured *Redis.io* using *Shodan* and *Nmap*
 
 *Shodan* give us a powerful tool to find several misconfigured servers.
+
 **Keyword** :  ` { product:"Redis key-value store", port:"6379" } `
 #### Security Best Practice
 Add to **redis.conf**
