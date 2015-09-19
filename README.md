@@ -5,7 +5,7 @@
 
 *Redis.io* is an open source in-memory database developed to store volatile data like messages, cache, cookie, etc.
 
-I beg you to read [url:redis.io/security](http://redis.io/topics/security) if you have any intention to setup *Redis.io* in production mode.
+I beg you to read [Redis.io/security](http://redis.io/topics/security) if you have any intention to setup *Redis.io* in production mode.
 
 ##### Discover misconfigured *Redis.io* using *Shodan* and *Nmap*
 
