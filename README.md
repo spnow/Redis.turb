@@ -14,9 +14,10 @@ I beg you to read [url:redis.io/security](http://redis.io/topics/security) if yo
 *Shodan* give us a powerful tool to find several misconfigured servers.
 
 ` { product:"Redis key-value store", port:"6379" } `
+
 #### Security Best Practice
 Add to **redis.conf**
-```
-bind 127.0.0.1
-```
+
+`bind 127.0.0.1`
+
 Allow access only from loopback (implied that the application that needs *Redis.io* running on the same host).
