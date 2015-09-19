@@ -13,6 +13,10 @@ I beg you to read [url:redis.io/security](http://redis.io/topics/security) if yo
 
 ` { product:"Redis key-value store", port:"6379" } `
 
+*Nmap* is useful to quickly find open ports.
+
+`nmap -p 6379 -n --open 199.233.232.0/24`
+
 ##### Upload malicious file
 Requirement : access to CONFIG and BGSAVE or SAVE
 ```
