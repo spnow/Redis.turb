@@ -41,7 +41,10 @@ Background saving started
 ```
 
 #### Security Best Practices
-Add to **redis.conf**
+
+##### Only bind *Redis.io* to Loopback
+
+Add to **redis.conf** :
 
 `bind 127.0.0.1`
 
