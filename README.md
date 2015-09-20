@@ -57,3 +57,13 @@ Add to **redis.conf** :
 `bind 127.0.0.1`
 
 Allow access only from loopback (implied that the application that needs *Redis.io* running on the same host).
+
+##### Enable authentication
+
+Add to **redis.conf** :
+
+`requirepass foobabar`
+
+Thus, run *Redis.io* with your **redis.conf** file :
+
+`redis-server /fullpath/to/redis.conf`
