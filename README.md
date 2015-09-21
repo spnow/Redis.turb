@@ -15,7 +15,7 @@ I beg you to read [Redis.io/security](http://redis.io/topics/security) if you ha
 
 *Nmap* is useful to quickly find open ports.
 
-`nmap -p 6379 -n --open 199.233.232.0/24`
+`nmap -p 6379 -n --open --script=redis-info xxx.xxx.xxx.xxx/yy`
 
 ##### Upload malicious file
 Requirement : access to CONFIG and BGSAVE or SAVE
