@@ -1,5 +1,5 @@
 # Redis.turb
-## *Redis.io* Penetration Testing 
+## *Redis.io* Penetration Testing (v3.0.4)
 ![GitHub Logo](/Redis_Logo.png)
 ##### Intro
 
