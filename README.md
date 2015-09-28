@@ -67,3 +67,13 @@ Add to **redis.conf** :
 Thus, run *Redis.io* with your **redis.conf** file :
 
 `redis-server /fullpath/to/redis.conf`
+
+#### Fuzzing *Redis.io*
+
+##### OpenRCE - Suley
+
+coming soon ...
+
+##### My own fuzzer
+
+coming soon ...
