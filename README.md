@@ -73,7 +73,3 @@ Thus, run *Redis.io* with your **redis.conf** file :
 ##### OpenRCE - Suley
 
 coming soon ...
-
-##### My own fuzzer
-
-coming soon ...
