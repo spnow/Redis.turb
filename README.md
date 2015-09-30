@@ -70,6 +70,6 @@ Thus, run *Redis.io* with your **redis.conf** file :
 
 #### Fuzzing *Redis.io*
 
-##### OpenRCE - Suley
+##### OpenRCE - Sulley
 
 coming soon ...
