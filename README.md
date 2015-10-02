@@ -70,6 +70,6 @@ Thus, run *Redis.io* with your **redis.conf** file :
 
 #### Fuzzing *Redis.io*
 
-##### OpenRCE - Sulley
-![OpenRCE Logo](/OpenRCE_Logo.jpg)
+##### ![OpenRCE Logo](/OpenRCE_Logo.jpg) OpenRCE - Sulley
+
 coming soon ...
