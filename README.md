@@ -1,6 +1,6 @@
 # Redis.turb
 ## *Redis.io* Penetration Testing (v3.0.4)
-![GitHub Logo](/Redis_Logo.png)
+![GitHub Logo](/Redis_Logo.jpg)
 ##### Intro
 
 *Redis.io* is an open source in-memory database developed to store volatile data like messages, cache, cookie, etc.
@@ -71,5 +71,5 @@ Thus, run *Redis.io* with your **redis.conf** file :
 #### Fuzzing *Redis.io*
 
 ##### OpenRCE - Sulley
-
+![OpenRCE Logo](/OpenRCE_Logo.jpg)
 coming soon ...
