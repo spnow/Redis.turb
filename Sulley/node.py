@@ -17,7 +17,7 @@ def init():
     s_string("password")
     s_static("\r\n\r\n")
 
-    s_initialize("bgrewriteaof")
+    s_initialize("bgrewriteaof") #BGREWRITEAOF>>
     s_static("BGREWRITEAOF")
     s_static("\r\n\r\n")
 
@@ -58,10 +58,18 @@ def init():
     s_initialize("client kill") #CLIENT KILL 123.123.123.123:1234>>
     s_static("CLIENT KILL")
     s_delim(" ")
-    s_string("123.123.123.123:1234")
+    s_string("123")
+    s_delim(".")
+    s_string("123")
+    s_delim(".")
+    s_string("123")
+    s_delim(".")
+    s_string("123")
+    s_delim(":")
+    s_string("1234")
     s_static("\r\n\r\n")
 
-    s_initialize("client list")
+    s_initialize("client list") #CLIENT LIST>>
     s_static("CLIENT LIST")
     s_static("\r\n\r\n")
 
