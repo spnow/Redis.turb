@@ -18,3 +18,5 @@ fi
 echo "$(tput setaf 2)[+] go go go Valgrind:" $1
 
 valgrind -q --trace-children=yes --xml=yes --xml-file=valgrind.xml --leak-check=full --leak-resolution=high $1 &
+
+tcpdump 'port 6379'

@@ -193,7 +193,7 @@ def init():
     s_static("CONFIG RESETSTAT")
     s_static("\r\n\r\n")
 
-    s_initialize("dbsize")
+    s_initialize("dbsize") #DBSIZE>>
     s_static("DBSIZE")
     s_static("\r\n\r\n")
 
@@ -205,12 +205,18 @@ def init():
     s_static("DEBUG SEGFAULT")
     s_static("\r\n\r\n")
 
-    s_initialize("decr")
+    s_initialize("decr") #DECR key>>
     s_static("DECR")
+    s_delim(" ")
+    s_string("key")
     s_static("\r\n\r\n")
 
-    s_initialize("decrby")
+    s_initialize("decrby") #DECRBY key 1>>
     s_static("DECRBY")
+    s_delim(" ")
+    s_string("key")
+    s_delim(" ")
+    s_string("1")
     s_static("\r\n\r\n")
 
     s_initialize("del")
@@ -221,8 +227,10 @@ def init():
     s_static("DISCARD")
     s_static("\r\n\r\n")
 
-    s_initialize("dump")
+    s_initialize("dump") #DUMP key>>
     s_static("DUMP")
+    s_delim(" ")
+    s_string("key")
     s_static("\r\n\r\n")
 
     s_initialize("echo")
@@ -529,8 +537,11 @@ def init():
     s_static("RENAMENX")
     s_static("\r\n\r\n")
 
-    s_initialize("restore")
-    s_static("RESTORE")
+    s_initialize("restore") #RESTORE key 1 "helloworld"
+    s_static("RESTORE key 1 ")
+    s_delim("\"")
+    s_static("\x00\nhelloworld\x06\x00'$'\x1c\xb3\xf7\bJ")
+    s_delim("\"")
     s_static("\r\n\r\n")
 
     s_initialize("role")
