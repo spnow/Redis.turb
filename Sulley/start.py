@@ -1,16 +1,16 @@
 from sulley import *
 import node
 
+# import nodes
 node.init()
 
-sess = sessions.session(session_filename="redis.session")
-target = sessions.target("192.168.109.135", 6379)
+sess = sessions.session(session_filename="fuzz.session")
+with open("fuzz.flow.udg", "w+") as hf:
+    hf.write(sess.render_graph_udraw())
 
-sess.connect(s_get("set"))
+# Scenario
+sess.connect(s_get("restore"))
 
-hf = open("flowchart.udg", "w+")
-hf.write(sess.render_graph_udraw())
-hf.close()
-
+target = sessions.target("192.168.109.138", 6379)
 sess.add_target(target)
 sess.fuzz()
