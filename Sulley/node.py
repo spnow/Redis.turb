@@ -405,8 +405,14 @@ def init():
     s_static("LPOP")
     s_static("\r\n\r\n")
 
-    s_initialize("lpush")
+    s_initialize("lpush") #LPUSH mylist "Hello">>
     s_static("LPUSH")
+    s_delim(" ")
+    s_string("mylist")
+    s_delim(" ")
+    s_delim("\"")
+    s_string("Hello")
+    s_delim("\"")
     s_static("\r\n\r\n")
 
     s_initialize("lpushx")
@@ -556,8 +562,14 @@ def init():
     s_static("RPOPLPUSH")
     s_static("\r\n\r\n")
 
-    s_initialize("rpush")
+    s_initialize("rpush") #RPUSH mylist "World">>
     s_static("RPUSH")
+    s_delim(" ")
+    s_string("mylist")
+    s_delim(" ")
+    s_delim("\"")
+    s_string("World")
+    s_delim("\"")
     s_static("\r\n\r\n")
 
     s_initialize("rpushx")
