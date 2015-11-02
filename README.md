@@ -72,4 +72,5 @@ Thus, run *Redis.io* with your **redis.conf** file :
 
 ##### OpenRCE - Sulley
 
-coming soon ...
+[Lighting Talk](http://tfairane.github.io/fuzzing.html#/)
+
