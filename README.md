@@ -68,9 +68,9 @@ Thus, run *Redis.io* with your **redis.conf** file :
 
 `redis-server /fullpath/to/redis.conf`
 
-#### Fuzzing *Redis.io*
-
-##### OpenRCE - Sulley
-
+##### Fuzz Redis.io with OpenRCE/Sulley and AFL
 [Lighting Talk](http://tfairane.github.io/fuzzing.html#/)
+
+##### MUST READ
+http://antirez.com/news/96
 
