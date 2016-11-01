@@ -71,7 +71,7 @@ Add to **redis.conf** :
 Allow access only from loopback (implied that the application that needs *Redis.io* running on the same host).
 
 ##### Fuzz Redis.io with OpenRCE/Sulley and AFL
-[Lighting Talk](http://tfairane.github.io/fuzzing.html#/)
+[Lighting Talk](http://slides.com/tfairane/deck/live)
 
 ##### MUST READ
 http://antirez.com/news/96
