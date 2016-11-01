@@ -3,21 +3,22 @@
 ![GitHub Logo](/Redis_Logo.jpg)
 ##### Intro
 
-*Redis.io* is an open source in-memory database developed to store volatile data like messages, cache, cookie, etc.
+*Redis.io* is an open source in-memory database developed to store volatile data as messages, cache, cookie, etc.
 
-I beg you to read [Redis.io/security](http://redis.io/topics/security) if you have any intention to setup *Redis.io* in production mode.
+I beg you to read [Redis.io/security](http://redis.io/topics/security) if you have any intention to setup *Redis.io* in production.
 
-##### Discover misconfigured *Redis.io* using *Shodan* and *Nmap*
+##### Discover misconfigured *Redis.io*
 
-*Shodan* give us a powerful tool to find several misconfigured servers.
+*Shodan* :
 
 ` { product:"Redis key-value store", port:"6379" } `
 
-*Nmap* is useful to quickly find open ports.
+*Nmap* :
 
 `nmap -p 6379 -n --open --script=redis-info xxx.xxx.xxx.xxx/yy`
 
 ##### Upload malicious file
+
 Requirement : access to CONFIG and BGSAVE or SAVE
 ```
 localhost:6379> config set dir /var/www/html
@@ -50,13 +51,6 @@ not connected>
 
 #### Security Best Practices
 
-##### Only bind *Redis.io* to Loopback
-
-Add to **redis.conf** :
-
-`bind 127.0.0.1`
-
-Allow access only from loopback (implied that the application that needs *Redis.io* running on the same host).
 
 ##### Enable authentication
 
@@ -67,6 +61,14 @@ Add to **redis.conf** :
 Thus, run *Redis.io* with your **redis.conf** file :
 
 `redis-server /fullpath/to/redis.conf`
+
+##### Only bind *Redis.io* to Loopback
+
+Add to **redis.conf** :
+
+`bind 127.0.0.1`
+
+Allow access only from loopback (implied that the application that needs *Redis.io* running on the same host).
 
 ##### Fuzz Redis.io with OpenRCE/Sulley and AFL
 [Lighting Talk](http://tfairane.github.io/fuzzing.html#/)
